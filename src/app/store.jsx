@@ -8,5 +8,6 @@ export const store = configureStore({
     reducer:{
         login:LoginSlice,
         mp3: Mp3Slice
-    }
+    },
+    devTools:process.env.NODE_ENV !== 'production'
 })

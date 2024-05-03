@@ -35,7 +35,7 @@ const dispatch = useDispatch();
             }}
           />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Yutube Mp3 Dowloader
+            Youtube Mp3 Dowloader
           </Typography>
           {user.email && user.password ? (
             <Button color="inherit" sx={{color:"#360a6d",fontWeight:"600"}} onClick={handleLogout}>Logout</Button>

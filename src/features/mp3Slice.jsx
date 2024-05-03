@@ -9,11 +9,15 @@ const initialState = {
 };
 
 export const getData = createAsyncThunk("getData", async (id) => {
-  const url = "https://youtube-mp3-download1.p.rapidapi.com/dl";
+  
+  const apikey = process.env.REACT_APP_API_KEY;
+  const url = process.env.REACT_APP_URL;
+
+  
   const options = {
     params: { id: id },
-    headers: {
-      "X-RapidAPI-Key": "bb05a90881msh61c614dd8543d00p1bf256jsnded6b34b2ce5",
+    headers: { 
+      "X-RapidAPI-Key": apikey,
       "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com",
     },
   };
