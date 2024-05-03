@@ -25,7 +25,7 @@ export const getData = createAsyncThunk("getData", async (id) => {
   if(response.data.code == 403){
     throw new Error("not 200 get mp3 data")
   }
-  console.log(response);
+   
   return response.data;
 });
 

@@ -16,11 +16,7 @@ const Home = () => {
 const loading = useSelector((state)=>state.mp3.loading)
 const data = useSelector((state)=> state.mp3.data)
 const error = useSelector((state)=> state.mp3.error)
-const success = useSelector((state)=> state.mp3.success)
-console.log(success);
-console.log(data);
-console.log(typeof data);
-console.log(data.length);
+const success = useSelector((state)=> state.mp3.success) 
 
   return (
     <Container sx={{paddingBottom:"3rem"}}>

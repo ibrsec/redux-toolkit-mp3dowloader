@@ -15,9 +15,7 @@ const SearchBar = () => {
  
   const handleSubmit = (e) => {
 e.preventDefault();
-const id = searchValue.slice(searchValue.indexOf("=")+1)
-console.log(searchValue);
-console.log(id);
+const id = searchValue.slice(searchValue.indexOf("=")+1) 
 
 
 dispatch(getData(id))
